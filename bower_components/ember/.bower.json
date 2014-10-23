@@ -1,0 +1,21 @@
+{
+  "name": "ember",
+  "main": [
+    "./ember.debug.js"
+  ],
+  "dependencies": {
+    "jquery": ">= 1.7.0 <= 2.1.0",
+    "handlebars": ">= 2.0.0 < 3.0.0"
+  },
+  "homepage": "https://github.com/components/ember",
+  "_release": "db2768a571",
+  "_resolution": {
+    "type": "branch",
+    "branch": "canary",
+    "commit": "db2768a57135e5adcd3eae3e052b7ecdcca7237c"
+  },
+  "_source": "git://github.com/components/ember.git",
+  "_target": "canary",
+  "_originalSource": "ember",
+  "_direct": true
+}
