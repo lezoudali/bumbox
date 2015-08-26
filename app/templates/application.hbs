@@ -3,41 +3,20 @@
 </header>
 
 <div class="album-list">
-  <div class="album">
-    <a class="ember-view" href="/album/1">
-      <img src="images/the-morning-after.jpg">
-    </a>
-    <p class="album-name">The Morning After</p>
-    <p class="album-artist">GOLDHOUSE</p>
-    <p class="song-count">8 songs</p>
-  </div>
 
-  <div class="album">
-    <a class="ember-view" href="/album/1">
-      <img src="images/the-morning-after.jpg">
-    </a>
-    <p class="album-name">The Morning After</p>
-    <p class="album-artist">GOLDHOUSE</p>
-    <p class="song-count">8 songs</p>
-  </div>
+  {{#each }}
+    <div class="album">
+      <a class="ember-view" href="/album/1">
+        <img src="{{artwork}}">
+      </a>
+      <p class="album-name">{{name}}</p>
+      <p class="album-artist">{{artist}}</p>
+      <p class="song-count">
+        {{songs.length}} songs
+      </p>
+    </div>
+  {{/each}}
 
-  <div class="album">
-    <a class="ember-view" href="/album/1">
-      <img src="images/the-morning-after.jpg">
-    </a>
-    <p class="album-name">The Morning After</p>
-    <p class="album-artist">GOLDHOUSE</p>
-    <p class="song-count">8 songs</p>
-  </div>
-
-  <div class="album">
-    <a class="ember-view" href="/album/1">
-      <img src="images/the-morning-after.jpg">
-    </a>
-    <p class="album-name">The Morning After</p>
-    <p class="album-artist">GOLDHOUSE</p>
-    <p class="song-count">8 songs</p>
-  </div>
 </div>
 
 <footer class="ember-view now-playing">
