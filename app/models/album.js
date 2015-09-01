@@ -9,5 +9,9 @@ export default DS.Model.extend({
   name: attr('string'),
   artist: attr('string'),
   isExplicit: attr('boolean'), 
-  songs: hasMany('songs')
+  songs: hasMany('songs'), 
+
+  songsDuration: Ember.computed.mapBy('songs', 'duration'),
+  totalDuration: Ember.computed.sum('songsDuration'),
+  songCount: Ember.computed.alias('songs.length')
 })
